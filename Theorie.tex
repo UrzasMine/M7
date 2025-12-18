@@ -2,13 +2,13 @@
 
 \subsection{Kontinuitätsgleichung}
 
-Wenn eine Flüssigkeit oder Gas mit nicht veränderlichen Dichte durch ein Rohr fließt welches einen veränderlichen Querschnitt hat, dann gilt die Kontinuitätsgleichung,
+Wenn eine inkompresibles Flüssigkeit oder Gas mit durch ein Rohr fließt welches einen veränderlichen Querschnitt hat, dann gilt die Kontinuitätsgleichung,
 \begin{equation}
     \centering
     v_1 \cdot A_1 = v_2 \cdot A_2 
     \label{eq:Kontinuität}
 \end{equation}
-dementspechend verhält sich die Strömungsgeschwindigkeit indirekt proportional zu der Querschnittsfläche\cite{Tipler}.
+Dabei sind $A_\text{1}$ und $A_\text{2}$ die Querschnittsflächen des Rohrs und $v_\text{1}$ und $v_\text{2}$ die Geschwindigkeit eines Volumenelements. Dementspechend verhält sich die Strömungsgeschwindigkeit indirekt proportional zu der Querschnittsfläche\cite{Tipler}.
 
 \subsection{Bernoulli-Gleichung}
 
@@ -18,5 +18,31 @@ Innerhalb eines Rohres lässt sich der gesamt Druck der Flüssigkeit oder des Ga
     \rho \cdot g \cdot h + \frac{\rho}{2} v^2 + p = const.
     \label{eq:Bernoulli}
 \end{equation}
-berechnen\cite{Tipler}. Hierbei beschreibt der erste Teil der Gleichung den Höhendruck,
+berechnen\cite{Tipler}. Hierbei beschreibt der erste Term der Gleichung den Höhendruck, der Zweite den sogenannten staudruck und der dritte Term den statischen Druck. Um den Druck zu Messen können verschiedene Sonden verwendet werden. In diesem Verscuh wird ein Prandl rohr verwendet. Dieses misst den gessamtdruck $p_\text{0}$ und den statischen Druck $p$ gleichzeitig. Aus deren DIfferenz errechnet sich dann nach gleichung \ref{eq:Bernoulli} der staudruck. Durch eine konstante höhe ergibt sich für die Strömungsgescwindigkeit
+\begin{equation}
+    v = \sqrt{\frac{2 \cdot (p_0 - p_s)}{\rho}}
+\end{equation}
+
+dieser Ausdruck. Zudem zu Reibung and der Rohroberfläche bzw. an den gegenständen im rohr. Die dadurch
+auftretenden Druckunterschiede vor und hinter dem Körper haben eine Widerstandskraft
+FW zur Folge. Diese ist durch 
+\begin{equation}
+    F_\text{W} = c_\text{w} \cdot \frac{\rho}{2} \cdot v^2 \cdot A
+\end{equation}
+gegeben. Dabei ist $c_\text{W}$ der Widerstandsbeiwert und A die Angestömte Fläche. Der  $c_\text{W}$ ist ein Maß für die Stromlinienförmigkeit des körpers. Der Wert hänt hier von der Reynoldschen Zahl sowie der Gestalt de Gegenstandes ab. Zusätzlich kann die AUftriebskraft eines Gegenstandes Gemessen werden. Die Formel hierfür ist durch 
+\begin{equation}
+    F_\text{A} = c_\text{A} \cdot \frac{\rho}{2} \cdot v^2 \cdot S
+\end{equation}
+
+gegeben. Dabei ist $c_\text{A}$ der Auftriebsziffer. S bezeichnet nun die Fläche des Tragflügels, also die bei einem üblichen koordinatensystem die Projektion auf die x-y ebene. Es kann nur der Koeffizient dieser beiden kräfte gebildet werden. Dieser wird als $\epsilon$ beizeichnet und ist durch
+\begin{equation}
+    \epsilon = \frac{c_\text{A}{c_\text{A}}}
+\end{equation} 
+gegeben. Da sowohl $c_\text{A}$ als auch $c_\text{A}$ von den Anstellwinkel abhängen, kann für diesen ein optimum gesucht werden. 
+
+
+
+
+
+
 
