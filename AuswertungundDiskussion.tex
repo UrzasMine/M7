@@ -1,1 +1,132 @@
 \section{Auswertung}
+
+\subsection{Kontinuitätsgleichung}
+
+ Die im ersten Teil des Versuches ermittelten Werte wurden in Tabelle \ref{tb:1} dargestellt, sowie der Hydrostatische Druck und die mithilfe von Gleichung (Strömnugsgeschwindigkeiten) ausgerechneten Strömnugsgeschwindigkeiten. Der Fehler dieser Strömnugsgeschwindigkeiten beträgt
+ \begin{equation}
+    \centering
+    \Delta v = \pm \left(\left|\frac{\partial v}{\partial p_\text{H}}\right|\cdot \Delta p_\text{H}\right) = \pm \frac{\Delta p_\text{H}}{\sqrt{2 \cdot \rho \cdot p_\text{H}}}.
+    \label{eq:Fehlerv}
+ \end{equation}
+ Zusätzlich konnte die Drucksonde nicht perfekt auf den verwendeten Flächenabschnitt einigestellt werden weswegen dort ein abgeschätzten Fehler von $\pm 2 \text{cm}^2$ angenommen wird. Zudem wurde die Raumtemperatur auf 20°C geschätzt wodurch die Luftdichte $\rho = 1,204 \frac{kg}{m^3}$(Quelle) beträgt.
+ Andere Fehlerquellen sind Fehler beim Ablesen der Drücke und Geschwindigkeiten da die Skala nicht linear ansteigt und zusätzlich nicht durchgehen Skaliert ist, aufgrund dessen wird der Fehler beim Manometer als $ \Delta p = \pm 3 \text{Pa}$ und $\Delta v = \pm 1 \frac{\text{m}}{\text{s}}$.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+        
+Fläche $A/\left[{cm^2}\right]$ & Hydrostatischer Druck $p_H/\left[Pa\right]$ & Geschwindigkeit $v/\left[\frac{m}{s}\right]$\\
+\hline
+$0,020$ & $5,2$ & $23$ \\
+$0,019$ & $5,3$ & $24$ \\
+$0,018$ & $5,5$ & $25$ \\
+$0,017$ & $5,7$ & $27$ \\
+$0,016$ & $5,9$ & $29$ \\
+$0,015$ & $6,2$ & $32$ \\
+
+    \end{tabular}
+    \label{tb:1}
+    \caption{Die Tabelle aus dem ersten Teil des Versuchs}
+\end{table}
+Aus diesen Werten lässt sich nun $ a := A \cdot v$ berechnen. Der Fehler für $a$ beträgt, 
+\begin{equation}
+    \centering
+    \Delta a = \pm \left(\left|\frac{\partial a}{\partial A}\right|\cdot \Delta A + \left|\frac{\partial a}{\partial v}\right|\cdot \Delta v \right) = \pm \left(\Delta A \cdot v + A \cdot \Delta v\right)
+    \label{Fehler-a}
+\end{equation}
+Wenn nun diese Werte für a gegen die Oberfläche A aufgetragen werden ergibt sich der Graph \ref{AV}. Bei diesem Graph ist zu erkennen dass die Werte recht gut innerhalb des Fehlers liegen. 
+\begin{figure}[H]
+    \centering
+    \includegraphics{Bilder/AV.png}
+    \label{AV}
+\end{figure}
+
+\subsection{Widerstands- und Auftriebskräfte}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+        Winkelstellung$/[°]$ & Auftriebskraft $F_W/[N]$ & Widerstandskraft $F_A/[N]$ \\
+        \hline
+        $14 \pm 1$ & $0,585 \pm 0,1$ & $2,15 \pm 0,15$ \\
+        $12 \pm 1$ & $0,49 \pm 0,1$ & $2,05 \pm 0,15$ \\
+        $10 \pm 1$ & $0,46 \pm 0,1$ & $2,0 \pm 0,15$ \\
+        $8 \pm 1$ & $0,42 \pm 0,1$ & $1,85 \pm 0,15$ \\
+        $6 \pm 1$ & $0,34 \pm 0,1$ & $1,65 \pm 0,15$ \\
+        $4 \pm 1$ & $0,27 \pm 0,1$ & $1,45 \pm 0,15$ \\
+        $2 \pm 1$ & $0,22 \pm 0,1$ & $1,15 \pm 0,15$ \\
+        $0 \pm 1$ & $0,18 \pm 0,1$ & $1,1 \pm 0,15$ \\
+        $-2 \pm 1$ & $0,12 \pm 0,1$ & $0,6 \pm 0,15$ \\
+        $-4 \pm 1$ & $0,1 \pm 0,1$ & $0,5 \pm 0,15$ \\
+        $-6 \pm 1$ & $0,09 \pm 0,1$ & $0 \pm 0,15$ \\
+        $-8 \pm 1$ & $0,065 \pm 0,1$ & $-0,3 \pm 0,15$ \\
+
+
+    \end{tabular}
+    \label{tb:2}
+    \caption{Die Tabelle der Werte aus dem zweiten Experiment mit den gemessen Winkeleinstellung von 14° bis -8°}
+\end{table}
+
+Die in Teil zwei des Experiments gemessenen Werte wurden in Tabelle \ref{tb:2}. Um aus den Werten der Tabelle (einfügen) die Widerstands- und Auftriebswerte zu errechnen wird angenommen, dass die Angeströmte Fläche S aus den Gleichungen (Fa und Fw) gleich der insgesamten Oberfläche des Tragflügels ist. Diese ist gegeben durch
+\begin{equation}
+    \centering
+    S = \text{B} \cdot \text{L}
+    \label{Flügel}
+\end{equation}
+der Fehler des Tragflügels ist durch
+\begin{equation}
+    \centering
+    \Delta S = \pm \left(\left|\frac{\partial S}{\partial \text{L}}\right|\cdot \Delta \text{L} + \left|\frac{\partial S}{\partial \text{B}}\right|\cdot \Delta \text{B}\right) = \pm \left(\Delta \text{L} \cdot \text{B} + \text{L}\cdot \Delta \text{B}\right)
+    \label{Fehler-Fläche}
+\end{equation}
+gegeben. Mit $\text{B} = 14,2 \pm 0,3$ cm und $\text{L} = 22,2 \pm 0,3$ cm beträgt die Tragfläche des Flügel $S = 315$ (einfügen). Um den Luftwiderstandswert $c_\text{W}$ zu berechnen wird Gleichung FW zu
+\begin{equation}
+    \centering 
+    c_\text{W} = \frac{2 \cdot F_\text{W}}{\rho \cdot v^2 \cdot S}
+    \label{Cw}
+\end{equation}
+umformuliert. Der Fehler von $c_\text{W}$ ist durch
+\begin{equation}
+    \centering
+    \Delta c_\text{W} = \pm \left(\left|\frac{\partial c_\text{w}}{\partial F_\text{W}}\right| \cdot \Delta F_\text{W} + \left|\frac{\partial c_\text{W}}{\partial v}\right| \cdot \Delta v + \left|\frac{\partial c_\text{W}}{\partial S}\right| \cdot \Delta S\right)
+\end{equation}
+gegeben, nach dem Ausdifferenzieren gibt dies, 
+\begin{equation}
+    \centering
+    \Delta c_\text{W} = \pm \left(\frac{2 \cdot \Delta F_\text{W}}{\rho \cdot v^2 \cdot S} + \frac{4 \cdot F_\text{W} \cdot \Delta v}{\rho \cdot v^3 \cdot S} + \frac{2 \cdot F_\text{W} \cdot \Delta S}{\rho \cdot v^2 \cdot S^2}\right)
+    \label{eq:FcW}
+\end{equation}
+
+Werden nun die Auftriebs- und Widerstandskräfte in einem Polardiagramm aufgetragen kann der ideale Anstellwinkel ermittelt werden. Dazu wird eine Ursprungsgerade so von Hand in das Diagramm hineingelegt, dass diese den Graphen der Messpunkte berührt, dies ist in der nächsten Abbildung zu erkennen.
+EINFÜGEN
+Anhand dieser Graphik kann nun der berührungspunkt abgelesen werden, dieser befindet sich bei (einfügen). Damit ergibt sich als Gleitzahl $\epsilon$ 
+\begin{equation}
+    \centering
+    \epsilon = .
+\end{equation}
+Mithilfe der Gleitzahl kann eine Aussage zum Verhältnis zwischen Auftriebskraft und Widerstandskraft getroffen werden, je geringer die Gleitzahl ist desto idealer ist das Verhältnis zwischen Auftrieb und Reibung. Um nun den Flügel effizient verwenden zu können muss der ideale Anstellwinkel gefunden werden bei dem die Gleitzahl so gering wie möglich wird. Dieser Winkel ist in dieser Durchführung bei (einfügen), bei diesem Ergebniss wird von einem Fehler von ($\pm2°$) ausgegangen. Dieser Relativ große Fehler hat mehrere Ursachen, eine dieser Ursachen ist dass die gerade durch den Ursprung nicht perfekt auf den Graphen gelegt werden konnte und dass dieser Wert auch nicht perfekt abgelesen werden konnte. Weitere Fehlerquellen sind zum einen dass die Tragfläche während des Versuches angefangen hat gegen die Wände des Windkanals zu stoßen und somit Ungenauigkeiten beim ablesen der Werte entstanden sind, diese Ungenauigkeiten wurden aber schon während den Messungen schon berücksichtigt und entsprechend im Laborbuch eingetragen. Weitere Fehler sind Ungenauigkeiten beim Einstellen der Winkel da die Winkeleinstellung sehr empfindlich ist somit bei kleinen Veränderungen der Höhe schon ein großer Unterschied im Winkel entsteht, zusätzlich können die Kraftmesser nicht vor dem Experiment Kalibriert werden und weisen somit schon Anfangswerte auf die bereits in den Fehler mit einbezogen wurden.
+
+
+
+
+\subsection{Verschiedene Körper im Windkanal}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c|c|c|c}
+    Körper & Fläche A $\left[cm^2\right]$ & Kraft $F_\text{W}$ $\left[N\right]$ & $c_\text{W}$ & $c_\text{W, Literatur}$ \\
+\hline
+Zylinder  & 12,6 $\pm 1,2$\\
+Zylinder & 24,6 $\pm 1,2$\\
+Zylinder & 50,3 $\pm 1,2$\\
+Tropfen $\left(\text{Spitz}\right)$ & $24,6 \pm 3,7$ \\
+Tropfen $\left(\text{Rund}\right)$ & $24,6 \pm 3,7$ \\
+Ball & 24,6 $\pm 3,7$ \\
+Halbkugel & 24,6 $\pm 3,7$ \\
+Schale & 24,6 $\pm 3,7$ \\
+Auto & 9,8 $\pm 0,63$ \\
+    
+\end{tabular}
+    
+\end{table}
+
