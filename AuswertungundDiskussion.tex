@@ -103,15 +103,15 @@ Werden nun die Auftriebs- und Widerstandskräfte in einem Polardiagramm aufgetra
     \centering
         \includegraphics[width=\linewidth]{Bilder/epsilon.png}
 
-    \caption{}
+    \caption{Der Auftriebsbeiwert aufgetragen gegen Den Wiederstandsbeiwert. Die Ausgleichsgeraden wurden mittels \texttt{numpy.polyfit} erstellt. Es wurde ein funktion der form $a \cdot ln(b \cdot x + c) + d$ verwendet. Die Steigung der Tangente wurde mittels Augenmaß bestimmt.}
     \label{optiwinkel}
 \end{figure}
-Anhand dieser Graphik kann nun der berührungspunkt abgelesen werden, dieser befindet sich bei (einfügen). Damit ergibt sich als Gleitzahl $\epsilon$ 
+Anhand dieser Graphik kann nun der berührungspunkt abgelesen werden, dieser befindet sich bei ca 0 Grad. Damit ergibt sich als Gleitzahl $\epsilon$ 
 \begin{equation}
     \centering
-    \epsilon = .
+    \epsilon = 0,39
 \end{equation}
-Mithilfe der Gleitzahl kann eine Aussage zum Verhältnis zwischen Auftriebskraft und Widerstandskraft getroffen werden, je geringer die Gleitzahl ist desto idealer ist das Verhältnis zwischen Auftrieb und Reibung. Um nun den Flügel effizient verwenden zu können muss der ideale Anstellwinkel gefunden werden bei dem die Gleitzahl so gering wie möglich wird. Dieser Winkel ist in dieser Durchführung bei (einfügen), bei diesem Ergebniss wird von einem Fehler von ($\pm2°$) ausgegangen. Dieser Relativ große Fehler hat mehrere Ursachen, eine dieser Ursachen ist dass die gerade durch den Ursprung nicht perfekt auf den Graphen gelegt werden konnte und dass dieser Wert auch nicht perfekt abgelesen werden konnte. Weitere Fehlerquellen sind zum einen dass die Tragfläche während des Versuches angefangen hat gegen die Wände des Windkanals zu stoßen und somit Ungenauigkeiten beim ablesen der Werte entstanden sind, diese Ungenauigkeiten wurden aber schon während den Messungen schon berücksichtigt und entsprechend im Laborbuch eingetragen. Weitere Fehler sind Ungenauigkeiten beim Einstellen der Winkel da die Winkeleinstellung sehr empfindlich ist somit bei kleinen Veränderungen der Höhe schon ein großer Unterschied im Winkel entsteht, zusätzlich können die Kraftmesser nicht vor dem Experiment Kalibriert werden und weisen somit schon Anfangswerte auf die bereits in den Fehler mit einbezogen wurden.
+Mithilfe der Gleitzahl kann eine Aussage zum Verhältnis zwischen Auftriebskraft und Widerstandskraft getroffen werden, je geringer die Gleitzahl ist desto idealer ist das Verhältnis zwischen Auftrieb und Reibung. Um nun den Flügel effizient verwenden zu können muss der ideale Anstellwinkel gefunden werden bei dem die Gleitzahl so gering wie möglich wird. Dieser Winkel ist in dieser Durchführung bei 0, bei diesem Ergebniss wird von einem Fehler von ($\pm2°$) ausgegangen. Dieser Relativ große Fehler hat mehrere Quellen, einer dieser Ursachen ist dass die gerade durch den Ursprung nicht perfekt auf den Graphen gelegt werden konnte und dass dieser Wert auch nicht perfekt abgelesen werden konnte. Weitere Fehlerquellen sind zum einen dass die Tragfläche während des Versuches angefangen hat gegen die Wände des Windkanals zu stoßen und somit Ungenauigkeiten beim ablesen der Werte entstanden sind, Weitere Fehler sind Ungenauigkeiten beim Einstellen der Winkel da die Winkeleinstellung sehr empfindlich ist somit bei kleinen Veränderungen der Höhe schon ein großer Unterschied im Winkel entsteht, zusätzlich können die Kraftmesser nicht vor dem Experiment Kalibriert werden und weisen somit schon Anfangswerte auf die bereits in den Fehler mit einbezogen wurden. Das Ergebniss von 0 Grad 
 
 
 
@@ -138,3 +138,11 @@ Auto & 9,8 $\pm 0,63$ & & \\
 \end{table}
 
 \subsection{quadratische Abhängigkeit des Luftwiderstandes}
+\begin{figure}[h]
+    \centering
+        \includegraphics[width=\linewidth]{Bilder/lnauftraggung.png}
+
+    \caption{Der Luftwiderstand logarithmisch aufgetragen gegen die Windgeschwindigkeit. Die Ausgleichsgeraden wurden mittels \texttt{numpy.polyfit} erstellt.}}
+    \label{lnauftragung}
+\end{figure}
+
