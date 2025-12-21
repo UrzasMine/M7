@@ -2,48 +2,45 @@
 
 \subsection{Kontinuitätsgleichung}
 
-Wenn eine inkompresibles Flüssigkeit oder Gas mit durch ein Rohr fließt welches einen veränderlichen Querschnitt hat, dann gilt die Kontinuitätsgleichung,
+Wenn eine inkompressible Flüssigkeit oder ein Gas durch ein Rohr fließt, welches einen veränderlichen Querschnitt hat, dann gilt die Kontinuitätsgleichung:
 \begin{equation}
     \centering
     v_1 \cdot A_1 = v_2 \cdot A_2 
     \label{eq:Kontinuität}
 \end{equation}
-Dabei sind $A_\text{1}$ und $A_\text{2}$ die Querschnittsflächen des Rohrs und $v_\text{1}$ und $v_\text{2}$ die Geschwindigkeit eines Volumenelements. Dementspechend verhält sich die Strömungsgeschwindigkeit indirekt proportional zu der Querschnittsfläche\cite{Tipler}.
+Dabei sind $A_1$ und $A_2$ die Querschnittsflächen des Rohrs und $v_1$ und $v_2$ die Geschwindigkeit eines Volumenelements. Dementsprechend verhält sich die Strömungsgeschwindigkeit indirekt proportional zur Querschnittsfläche \cite{Tipler}.
 
 \subsection{Bernoulli-Gleichung}
 
-Innerhalb eines Rohres lässt sich der gesamt Druck der Flüssigkeit oder des Gases mithilfe der Bernoulli-Gleichung
+Innerhalb eines Rohres lässt sich der Gesamtdruck der Flüssigkeit oder des Gases mithilfe der Bernoulli-Gleichung berechnen:
 \begin{equation}
     \centering
-    \rho \cdot g \cdot h + \frac{\rho}{2} v^2 + p = const.
+    \rho \cdot g \cdot h + \frac{\rho}{2} v^2 + p = \text{const.}
     \label{eq:Bernoulli}
 \end{equation}
-berechnen\cite{Tipler}. Hierbei beschreibt der erste Term der Gleichung den Höhendruck, der Zweite den sogenannten staudruck und der dritte Term den statischen Druck. Um den Druck zu Messen können verschiedene Sonden verwendet werden. In diesem Verscuh wird ein Prandl rohr verwendet. Dieses misst den gessamtdruck $p_\text{0}$ und den statischen Druck $p$ gleichzeitig. Aus deren DIfferenz errechnet sich dann nach gleichung \ref{eq:Bernoulli} der staudruck. Durch eine konstante höhe ergibt sich für die Strömungsgescwindigkeit
+Hierbei beschreibt der erste Term den Höhendruck, der zweite den Staudruck und der dritte Term den statischen Druck. Um den Druck zu messen, können verschiedene Sonden verwendet werden. In diesem Versuch wird ein Prandtl-Rohr verwendet. Dieses misst den Gesamtdruck $p_0$ und den statischen Druck $p$ gleichzeitig. Aus deren Differenz errechnet sich dann nach Gleichung \ref{eq:Bernoulli} der Staudruck.  
+
+Durch eine konstante Höhe ergibt sich für die Strömungsgeschwindigkeit
 \begin{equation}
     v = \sqrt{\frac{2 \cdot (p_0 - p_s)}{\rho}}
+    \label{strö}
 \end{equation}
 
-dieser Ausdruck. Zudem zu Reibung and der Rohroberfläche bzw. an den gegenständen im rohr. Die dadurch
-auftretenden Druckunterschiede vor und hinter dem Körper haben eine Widerstandskraft
-FW zur Folge. Diese ist durch 
+Dieser Ausdruck gilt zusätzlich zu Reibung an der Rohroberfläche bzw. an den Gegenständen im Rohr. Die dadurch auftretenden Druckunterschiede vor und hinter dem Körper haben eine Widerstandskraft $F_W$ zur Folge. Diese ist durch 
 \begin{equation}
-    F_\text{W} = c_\text{w} \cdot \frac{\rho}{2} \cdot v^2 \cdot A
+    F_\text{W} = c_\text{W} \cdot \frac{\rho}{2} \cdot v^2 \cdot A
     \label{Widerstandskraft}
 \end{equation}
-gegeben. Dabei ist $c_\text{W}$ der Widerstandsbeiwert und A die Angestömte Fläche. Der  $c_\text{W}$ ist ein Maß für die Stromlinienförmigkeit des körpers. Der Wert hänt hier von der Reynoldschen Zahl sowie der Gestalt de Gegenstandes ab. Zusätzlich kann die AUftriebskraft eines Gegenstandes Gemessen werden. Die Formel hierfür ist durch 
+gegeben. Dabei ist $c_\text{W}$ der Widerstandsbeiwert und $A$ die angeströmte Fläche. Der $c_\text{W}$ ist ein Maß für die Stromlinienförmigkeit des Körpers. Der Wert hängt hier von der Reynolds-Zahl sowie der Gestalt des Gegenstandes ab.  
+
+Zusätzlich kann die Auftriebskraft eines Gegenstandes gemessen werden. Die Formel hierfür lautet:
 \begin{equation}
     F_\text{A} = c_\text{A} \cdot \frac{\rho}{2} \cdot v^2 \cdot S
 \end{equation}
+Dabei ist $c_\text{A}$ der Auftriebsbeiwert. $S$ bezeichnet die Fläche des Tragflügels, also die Projektion auf die x-y-Ebene eines üblichen Koordinatensystems.  
 
-gegeben. Dabei ist $c_\text{A}$ der Auftriebsziffer. S bezeichnet nun die Fläche des Tragflügels, also die bei einem üblichen koordinatensystem die Projektion auf die x-y ebene. Es kann nur der Koeffizient dieser beiden kräfte gebildet werden. Dieser wird als $\epsilon$ beizeichnet und ist durch
+Es kann nur der Koeffizient dieser beiden Kräfte gebildet werden. Dieser wird als $\epsilon$ bezeichnet und ist durch
 \begin{equation}
-    \epsilon = \frac{c_\text{A}}{c_\text{A}}
+    \epsilon = \frac{c_\text{A}}{c_\text{W}}
 \end{equation} 
-gegeben. Da sowohl $c_\text{A}$ als auch $c_\text{A}$ von den Anstellwinkel abhängen, kann für diesen ein optimum gesucht werden. 
-
-
-
-
-
-
-
+gegeben. Da sowohl $c_\text{A}$ als auch $c_\text{W}$ von den Anstellwinkeln abhängen, kann für diesen ein Optimum gesucht werden.
