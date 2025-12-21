@@ -38,6 +38,7 @@ Wenn nun diese Werte für $a$ gegen die Oberfläche $A$ aufgetragen werden, ergi
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{Bilder/AV.png}
+    \caption{Der Auftriebsbeiwert aufgetragen gegen den Widerstandsbeiwert. Die Ausgleichsgeraden wurden mittels \texttt{numpy.polyfit} erstellt. Zusätzlich wurde der Mittelwert aus allen $a$ gebildet und die zugehörige konstante Gerade eingezeichnet.}
     \label{if:AV}
 \end{figure}
 
@@ -79,7 +80,7 @@ Der Fehler der Tragfläche ist durch
     \Delta S = \pm \left(\left|\frac{\partial S}{\partial L}\right|\cdot \Delta L + \left|\frac{\partial S}{\partial B}\right|\cdot \Delta B\right) = \pm \left(\Delta L \cdot B + L \cdot \Delta B\right)
     \label{Fehler-Fläche}
 \end{equation}
-gegeben. Mit $B = 14 \pm 0,3~\text{cm}$ und $L = 22 \pm 0,3~\text{cm}$ beträgt die Tragfläche des Flügels $S = 308~\text{cm}^2$.  
+gegeben. Mit $B = 14 \pm 0,3~\text{cm}$ und $L = 22 \pm 0,3~\text{cm}$ beträgt die Tragfläche des Flügels $S = 308 \pm 0,6~\text{cm}^2$.  
 
 Um den Luftwiderstandsbeiwert $c_W$ zu berechnen, wird Gleichung $F_W$ zu
 \begin{equation}
@@ -113,7 +114,7 @@ Anhand dieser Grafik kann nun der Berührungspunkt abgelesen werden; dieser befi
     \epsilon = 5,67
 \end{equation}
 
-Mithilfe der Gleitzahl kann eine Aussage zum Verhältnis zwischen Auftriebskraft und Widerstandskraft getroffen werden: Je geringer die Gleitzahl, desto idealer ist das Verhältnis zwischen Auftrieb und Reibung. Um den Flügel effizient verwenden zu können, muss der ideale Anstellwinkel gefunden werden, bei dem die Gleitzahl so gering wie möglich ist. Dieser Winkel liegt in dieser Durchführung bei 0°; hierbei wird von einem Fehler von $\pm 2°$ ausgegangen.  
+Mithilfe der Gleitzahl kann eine Aussage zum Verhältnis zwischen Auftriebskraft und Widerstandskraft getroffen werden: Je höher die Gleitzahl, desto idealer ist das Verhältnis zwischen Auftrieb und Reibung. Um den Flügel effizient verwenden zu können, muss der ideale Anstellwinkel gefunden werden, bei dem die Gleitzahl so gering wie möglich ist. Dieser Winkel liegt in dieser Durchführung bei 0°; hierbei wird von einem Fehler von $\pm 2°$ ausgegangen.  
 
 Das Ergebnis von 0° ist jedoch nicht realistisch, da die Auftriebskraft hier 0~N betragen sollte. Auch bei negativen Anstellwinkeln wurde noch Auftriebskraft gemessen. Hier ist von einem großen systematischen Fehler auszugehen. Dieser relativ große Fehler hat mehrere Ursachen: Zum einen konnte die Gerade durch den Ursprung nicht perfekt auf den Graphen gelegt werden, und zum anderen konnte der Berührungspunkt nicht exakt abgelesen werden. Weitere Fehlerquellen sind, dass die Tragfläche während des Versuchs gegen die Wände des Windkanals gestoßen ist, wodurch Ungenauigkeiten beim Ablesen entstanden. Weitere Unsicherheiten ergeben sich durch empfindliche Winkeleinstellungen, kleine Veränderungen der Höhe führen bereits zu großen Unterschieden im Winkel. Zusätzlich konnten die Kraftmesser vor dem Experiment nicht kalibriert werden, wodurch bereits Anfangswerte in den Fehler einfließen.
 
@@ -168,24 +169,11 @@ Tropfen $\left(\text{Rund}\right)$ & $24,6 \pm 3,7$& 0,02 $\pm 0,05$ N& 0,10 & 0
 Ball & 24,6 $\pm 3,7$ & 0,06$\pm 0,05$ N & 0,18 & 0,4\\ 
 Halbkugel & 24,6 $\pm 3,7$ & 0,18 $\pm 0,05$ N& 0,12 & 0,8\\
 
-\caption{Die Flächen Widerstandkräfte und Wiederstandeiwerte der verschiedenen Formen bei konstanter windgeschwindigkeit}
+
 
 \end{tabular}
-    
+\caption{Die Flächen Widerstandkräfte und Wiederstandeiwerte der verschiedenen Formen bei konstanter windgeschwindigkeit}    
 \end{table}
-
-\subsection{quadratische Abhängigkeit des Luftwiderstandes}
-Trägt man den Luftwiderstand logarithmisch gegen die Windgeschwindigkeit auf so lässt sich ein linearer zusammenhang wie in Abbildung \ref{lnauftragung} erkennen. Dadurch lässt sich der $c_\text{W} = 0,576$ Wert deutlich besser bestimmen der relative fehler zum literautwert beträgt jetzt "nur" noch 40 \% wohingegn bei der Vorherrigen Aufgabe der fehler 660 \% betrug. Das die Messung hier besser funktioniert hat kann auf die Mehrzahl an Messpunkten zurückgeführ werden. 
-
-\begin{figure}[H]
-    \centering
-        \includegraphics[width=\linewidth]{Bilder/lnauftraggung.png}
-
-    \caption{Der Luftwiderstand logarithmisch aufgetragen gegen die Windgeschwindigkeit. Die Ausgleichsgeraden wurden mittels \texttt{numpy.polyfit} erstellt.}
-    \label{lnauftragung}
-
-    
-\end{figure}
 
 \subsection{Verschiedene Körper im Windkanal}
 
