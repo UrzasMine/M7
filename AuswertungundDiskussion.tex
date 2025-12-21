@@ -2,7 +2,7 @@
 
 \subsection{Kontinuitätsgleichung}
 
- Die im ersten Teil des Versuches ermittelten Werte wurden in Tabelle \ref{tb:1} dargestellt, sowie der Hydrostatische Druck und die mithilfe von Gleichung (Strömnugsgeschwindigkeiten) ausgerechneten Strömnugsgeschwindigkeiten. Der Fehler dieser Strömnugsgeschwindigkeiten beträgt
+ Die im ersten Teil des Versuches ermittelten Werte wurden in Tabelle \ref{tb:1} dargestellt, sowie der Hydrostatische Druck und die mithilfe von Gleichung (Strömnugsgeschwindigkeiten) ausgerechneten Strömungsgeschwindigkeiten. Der Fehler dieser Strömnugsgeschwindigkeiten beträgt
  \begin{equation}
     \centering
     \Delta v = \pm \left(\left|\frac{\partial v}{\partial p_\text{H}}\right|\cdot \Delta p_\text{H}\right) = \pm \frac{\Delta p_\text{H}}{\sqrt{2 \cdot \rho \cdot p_\text{H}}}.
@@ -41,6 +41,7 @@ Wenn nun diese Werte für a gegen die Oberfläche A aufgetragen werden ergibt si
 
     \label{AV}
 \end{figure}
+In diesem Graphen ist nun eine positive Steigung zu erkennen obwohl es eigentlich keine Steigung geben sollte da dieser Wert Konstant sein sollte. Gründe für diese Steigung könnten sein, dass damit die Drucksonde beweglich im Versuchsaufbau ist ein Spalt im oberen Teil des Windkanals ist wodurch ein Druckverlust entsteht. Dieser Druckverlust würde aber eher zu einer negativen Steigung im Graphen führen. Weitere Fehlerquellen sind, dass das Prandl-Rohr Parallel zur Windrichtung ausgerichtet werden muss welches nicht wirklich möglich war einzustellen Aufgrund der Art und Weise wie das Prandl-Rohr aufgebaut ist, eine weitere Fehlerquelle ist dass die Drucksonde sehr schwer auf der Perfekten höhe zum Messen geblieben ist. Einer der wahrscheinlich größten Fehler kommt von der großen Schrittweite der Druckskala welcher zu einem sehr hohen statistischen Fehler führen kann.
 
 \subsection{Widerstands- und Auftriebskräfte}
 
@@ -107,9 +108,10 @@ Werden nun die Auftriebs- und Widerstandskräfte in einem Polardiagramm aufgetra
     \label{optiwinkel}
 \end{figure}
 Anhand dieser Graphik kann nun der berührungspunkt abgelesen werden, dieser befindet sich bei ca 0 Grad. Damit ergibt sich als Gleitzahl $\epsilon$ 
+
 \begin{equation}
     \centering
-    \epsilon = 5,67
+    \epsilon = .
 \end{equation}
 Mithilfe der Gleitzahl kann eine Aussage zum Verhältnis zwischen Auftriebskraft und Widerstandskraft getroffen werden, je geringer die Gleitzahl ist desto idealer ist das Verhältnis zwischen Auftrieb und Reibung. Um nun den Flügel effizient verwenden zu können muss der ideale Anstellwinkel gefunden werden bei dem die Gleitzahl so gering wie möglich wird. Dieser Winkel ist in dieser Durchführung bei 0, bei diesem Ergebniss wird von einem Fehler von ($\pm2°$) ausgegangen. Dieser Relativ große Fehler hat mehrere Quellen, einer dieser Ursachen ist dass die gerade durch den Ursprung nicht perfekt auf den Graphen gelegt werden konnte und dass dieser Wert auch nicht perfekt abgelesen werden konnte. Weitere Fehlerquellen sind zum einen dass die Tragfläche während des Versuches angefangen hat gegen die Wände des Windkanals zu stoßen und somit Ungenauigkeiten beim ablesen der Werte entstanden sind, Weitere Fehler sind Ungenauigkeiten beim Einstellen der Winkel da die Winkeleinstellung sehr empfindlich ist somit bei kleinen Veränderungen der Höhe schon ein großer Unterschied im Winkel entsteht, zusätzlich können die Kraftmesser nicht vor dem Experiment Kalibriert werden und weisen somit schon Anfangswerte auf die bereits in den Fehler mit einbezogen wurden. Das Ergebniss von 0 Grad ist nicht realistisch die Auftriebskraft sollte hier 0~N Betragen. Auch bei negativen anstellwinkel ist noch auftriebskraft gemmessen worden. Hier ist von einem großen systematischem fehler auszugehen. 
 
@@ -118,7 +120,7 @@ Mithilfe der Gleitzahl kann eine Aussage zum Verhältnis zwischen Auftriebskraft
 
 \subsection{Verschiedene Körper im Windkanal}
 
-Im dritten Teil des Versuches wird nun für mehrere Verschiedene Körper die Widerstandskraft $c_\text{W} $ ermittelt. Hierzu wird Formel \ref{} verwendet. Für alle Körper außer dem Auto wird für A die Formel des Kreises verwendet, der Fehler für diese ist durch
+Im dritten Teil des Versuches wird nun für mehrere Verschiedene Körper die Widerstandskraft $c_\text{W} $ ermittelt. Hierzu wird Formel \ref{Widerstandskraft} verwendet und nach $c_\text{W}$ umgestellt. Für alle Körper außer dem Auto wird für A die Formel des Kreises verwendet, der Fehler für diese ist durch
 \begin{equation}
 \centering
 \Delta A = \pm \left|\frac{ \partial A} { \partial r} \right| \cdot \Delta r = \pm 2\pi \cdot r \cdot \Delta r
@@ -126,8 +128,34 @@ Im dritten Teil des Versuches wird nun für mehrere Verschiedene Körper die Wid
 gegeben. Für die Oberfläche des Fahrzeugs wird angenommen dass es sich um ein Rechteck handelt, dadurch ergibt sich für den Fehler
 \begin{equation}
 \centering
-\Delta A =
+\Delta A = \pm \left(\left|\frac{\partial A}{\partial L}\right| \cdot \Delta X + \left|\frac{\partial A}{\partial B}\right| \cdot \Delta X\right) = \pm \left(L + B\right) \Delta X
 \end{equation}
+Der Fehler für $c_\text{W}$ ist durch
+\begin{equation}
+    \centering
+\Delta c_W
+=
+\pm \left(
+\left| \frac{\partial c_\text{W}}{\partial F_W} \right| \Delta F_W
++
+\left| \frac{\partial c_W}{\partial p_d} \right| \Delta p_d
++
+\left| \frac{\partial c_W}{\partial A} \right| \Delta A
+\right)
+ = 
+\Delta c_W
+=
+\pm \left(
+\frac{\Delta F_W}{p_d\,A}
++
+\frac{F_W\,\Delta p_d}{p_d^{2}\,A}
++
+\frac{F_W\,\Delta A}{p_d\,A^{2}}
+\right)
+\end{equation}
+gegeben.
+Die Tabelle listet die Widerstandsbeiwerte im Vergleich zu den Literatur Werten auf.
+
 \begin{table}[H]
 \centering
 \begin{tabular}{c|c|c|c|c}
